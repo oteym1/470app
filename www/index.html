@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>DataMuse</title>
+    </head>
+    <body ng-app="DataMuse" ng-controller="MainController as main">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="main.js"></script>
+        <script src="phrase-controller.js"></script>
+        <script src="word-factory.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+
+      <div ng-repeat="data in main.phrases" class="w3-padding-medium">
+        <h1 ng-bind="data.word"></h1>
+      </div>
+    </body>
+</html>
